@@ -14,11 +14,18 @@ Components
 -------------------
 
 First of all we have to split out task into small pieces: components.
+User part:
 * Header (static)
 * Footer (static)
 * Left menu with top recipe sections
 * Left menu with holiday sections
 * List of recipes
 * Pager
+
+Admin part:
+* List of holidays (ability to add new, edit or remove)
+* List of recipes (TODO )
+* Recipe finder
+* 
 
 Also we have to deal with routes (optional).
