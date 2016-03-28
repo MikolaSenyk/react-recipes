@@ -10,3 +10,15 @@ Windows related links:
 * https://blogs.technet.microsoft.com/josebda/2012/11/13/windows-server-2012-file-server-tip-disable-8-3-naming-and-strip-those-short-names-too/ - how to disable old 8.3 filenames in disc partition
 
 
+Components
+-------------------
+
+First of all we have to split out task into small pieces: components.
+* Header (static)
+* Footer (static)
+* Left menu with top recipe sections
+* Left menu with holiday sections
+* List of recipes
+* Pager
+
+Also we have to deal with routes (optional).
