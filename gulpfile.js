@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     babelify = require('babelify'),
     buffer = require('vinyl-buffer'),
     source = require('vinyl-source-stream'),
+    watch = require('gulp-watch'),
     p = {
         jsx: 'app.jsx',
         bundle: 'app.js',
@@ -28,9 +29,12 @@ gulp.task('browserify', function() {
 });
 
 gulp.task('build', ['clean'], function() {
-  //process.env.NODE_ENV = 'production';
+  process.env.NODE_ENV = 'production';
   gulp.start(['browserify']);
-  //gulp.start(['libs', 'browserify', 'styles']);
+});
+
+gulp.task('watch', function() {
+  gulp.watch(['./*/*.jsx'], ['browserify']);
 });
 
 gulp.task('default', function() {

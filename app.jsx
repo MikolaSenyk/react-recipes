@@ -1,10 +1,10 @@
 var React = require('react');
 var ReactDom = require('react-dom');
-var App = require('./views/App.jsx');
+var AppContainer = require('./views/app-container.jsx');
 
 //window.React = React;
 
 ReactDom.render(
-    <App/>,
+    <AppContainer/>,
     document.getElementById('app')
 );
