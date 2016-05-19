@@ -17,6 +17,9 @@ var gulp = require('gulp'),
 gulp.task('clean', function(cb) {
   return del(['dist'], cb);
 });
+gulp.task('clean2', function(cb) {
+  return del(['dist'], cb);
+});
 
 gulp.task('browserify', function() {
   browserify(p.jsx)
