@@ -14,6 +14,10 @@ var gulp = require('gulp'),
     };
 
 
+gulp.task('clean', function(cb) {
+  return del(['dist'], cb);
+});
+
 gulp.task('browserify', function() {
   browserify(p.jsx)
     .transform("babelify", {presets: ["es2015", "react"]})
