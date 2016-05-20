@@ -14,7 +14,10 @@ var gulp = require('gulp'),
     };
 
 
-gulp.task('clean', function(cb) {
+gulp.task('clean1', function(cb) {
+  return del(['dist'], cb);
+});
+gulp.task('clean2', function(cb) {
   return del(['dist'], cb);
 });
 
